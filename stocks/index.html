@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股票淨賺值計算 | 練習用</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./ICON.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="calc-list container__buy">
+            <div class="container__buy wrapper">
+                    <h3>買進成本：</h3>
+                    <span>$</span>
+                    <p class="cost-price">0</p>
+            </div>
+            <div class="container__buy wrapper">
+                <h4>股票代號：</h4>
+                <input type="text" placeholder="請輸入股票代號" class="stock-num" list="stocks"/>
+            </div>
+            <div class="container__buy wrapper">
+                <h4>每股單價：</h4>
+                <span>$</span>
+                <input type="text" placeholder="請輸入每股單價" class="price-input"/>
+            </div>
+            
+            <div class="container__buy wrapper">
+                <h4>股票數量：</h4>
+                <input type="number" placeholder="單位：1000股 (張)"  value="1" class="amount-input"/>
+            </div>
+            
+        </div>
+        <div class="calc-list container__sell">
+            <div class="container__buy wrapper">
+                <h3>賣出成本：</h3>
+                <span>$</span>
+                <p class="sell-price">0</p>
+            </div>
+            <div class="container__buy wrapper">
+                <h4>股票代號：</h4>
+                <input type="text" placeholder="請輸入股票代號" class="stock-num" list="stocks"/>
+            </div>
+            <div class="container__buy wrapper">
+                <h4>每股單價：</h4>
+                <span>$</span>
+                <input type="text" placeholder="請輸入每股單價" class="price-output"/>
+            </div>
+            
+            
+            <div class="container__buy wrapper">
+                <h4>股票數量：</h4>
+                <input type="number" placeholder="單位：1000股 (張)" value="1" class="amount-output"/>
+            </div>
+            
+            
+        
+        </div>
+
+        <div class="container__btn">
+            <button class="calc-btn">
+                結算
+            </button>
+        </div>
+
+        <div class="container__result">
+            <span>$</span>
+            <h3 class="result">0</h3>
+        </div>
+    </div>
+
+    <div class="info">
+        <h4>This Website Just for Practice and Personal Uses.</h4>
+    </div>
+
+        <datalist id="stocks">
+            <option value="2302">麗正</option>
+            <option value="2303">聯電</option>
+            <option value="2329">華泰</option>
+            <option value="2330">台積電</option>
+            <option value="2337">旺宏</option>
+            <option value="2338">光罩</option>
+            <option value="2344">華邦電</option>
+            <option value="2449">京元電子</option>
+            <option value="3034">聯詠</option>
+            <option value="3711">日月光投控</option>
+            <option value="3036">文曄</option>
+            <option value="3450">聯鈞</option>
+        </datalist>
+        
+
+        
+<script src="app.js"></script>
+</body>
+</html>
